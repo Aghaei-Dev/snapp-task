@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+:root {
+  --text-white: #fff;
+  --text-50: #e5e5e5;
+  --text-100: #d3d3d3;
+  --text-200: #afafaf;
+  --text-300: #8b8b8b;
+  --text-400: #686868;
+  --text-500: #a7a7a7;
+  --text-600: #373737;
+  --text-700: #2b2b2b;
+  --text-800: #1e1e1e;
+  --text-900: #111111;
+  --text-950: #0b0b0b;
+
+  --primary-50: #bafcff;
+  --primary-100: #9efbff;
+  --primary-200: #66f9ff;
+  --primary-300: #2ef7ff;
+  --primary-400: #00ecf5;
+  --primary-500: #00b6bd;
+  --primary-600: #00999e;
+  --primary-700: #007b80;
+  --primary-800: #005e61;
+  --primary-900: #004043;
+  --primary-950: #003133;
+
+  --maxWidth: 1270px;
+
+  --hard-shadow: #13151d;
+}
+
+::selection {
+  background: inherit;
+  color: inherit;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+}
+input,
+textarea,
+button {
+  outline: 0;
+  border: 0;
+  background-color: unset;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+svg {
+  width: 18px;
+}
+html,
+body {
+  margin: auto;
+  max-width: var(--max-width);
+  background: var(--text-white);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+}
+
+/* global classes */
+
+.fixed-width {
+  margin: 0 auto;
+  max-width: var(--maxWidth);
+  overflow-x: hidden;
+}
+@media screen and (width <= 1270px) {
+  .fixed-width {
+    max-width: 95vw;
+  }
+}
